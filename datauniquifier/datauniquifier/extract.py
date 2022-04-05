@@ -29,9 +29,8 @@ def extract_data_given_column(data: str, column: int) -> List[str]:
     # --> refer to the file called input/data.txt to learn more about
     # the format of the comma separated value (CSV) file that we must parse
     # --> iterate through each line of the file and extract the current job
-    for row in data.splitlines("\n"):
+    for row in data.splitlines():
         result = row.split(",")
-        if result[0]:
-            
     # ---> extract the specified column that contains the requested data
     # return the list of all of the specified column
+        print(result)

@@ -60,28 +60,27 @@ def main(
         console.print()
         # use the extract_data_given_column function to get a data column text list
         data_column_text_list = extract.extract_data_given_column(data_text, column)
+        print(data_column_text_list)
     # call the constructed function and capture the result
-        result = function_to_call(data_column_text_list)
-
+        uniquified_list = function_to_call(data_column_text_list)
     # display debugging information with the function's output
-        return result
-    # TODO: make sure to only take this step if the --display is specified
+    # make sure to only take this step if the --display is specified
     # display the estimated overall memory use as reported by the operating system
     # Reference:
     # https://stackoverflow.com/questions/938733/total-memory-used-by-python-process
     # Note: you may need to adjust the implementation of the format_bytes function
     # in the analyze module depending on your operating system
-    process = psutil.Process(os.getpid())
+    process = psutil.Process(os.getpid(display))
     console.print("Estimated overall memory according to the operating system:")
     console.print("   " + analyze.format_bytes(process.memory_info().vms))
     # display the reduction and percent reduction that is a result of the uniquification process
     console.print(":mag: So, did this remove a lot of duplicate data?")
     console.print()
-    console.print("   The number of values removed from the data: ")
-    console.print("   The percent reduction due to uniquification:")
+    console.print(f"   The number of values removed from the data: {analyze.calculate_reduction(data_column_text_list, uniquified_list)}")
+    console.print(f"   The percent reduction due to uniquification: {analyze.calculate_percent_reduction(data_column_text_list, uniquified_list)}")
     console.print()
     # make sure that your program output is exactly like the
     # output provided in the project description on the Proactive Programmers web site
-    # TODO: once you finish implementing the program make sure that you evaluate:
+    # once you finish implementing the program make sure that you evaluate:
     # --> Time efficiency and memory consumption and percent reduction for column 0 and column 1
     #     when running at least three of the uniquification algorithms in the uniquify module

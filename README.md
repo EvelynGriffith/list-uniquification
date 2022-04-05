@@ -10,8 +10,8 @@ After cloning this repository to your computer, please take the following steps:
 - Change into the program directory by typing `cd datauniquifier`.
 - Install the dependencies for the project by typing `poetry install`
 - Run the program with the correct input file by typing:
-  - `poetry run datauniquifier --approach listcomprehension --column 1 --data-file input/data.txt`
-  - `poetry run datauniquifier --approach listcomprehension --column 0 --data-file input/data.txt`
+  - `poetry run datauniquifier --approach setcomprehension --column 1 --data-file input/data.txt`
+  - `poetry run datauniquifier --approach setcomprehension --column 0 --data-file input/data.txt`
   - Please note that the program will not work unless you add the required source code
   - You should run the program in all possible configurations for `--approach` and `--column`
   - You should also try to run the program with only the `--help` flag
