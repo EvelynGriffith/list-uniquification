@@ -21,11 +21,12 @@ import csv
 
 def extract_data_given_column(data: str, column: int) -> List[str]:
     """Extract a specified data column from the provided textual contents."""
-    # TODO: create an empty list of the data
+    # create an empty list of the data
+    data = []
     # note that the data file:
     # --> contains two columns
     # --> each of which contains textual data
-    # --> TODO: refer to the file called input/data.txt to learn more about
+    # --> refer to the file called input/data.txt to learn more about
     # the format of the comma separated value (CSV) file that we must parse
     # --> TODO: iterate through each line of the file and extract the current job
     # TODO: ---> extract the specified column that contains the requested data
