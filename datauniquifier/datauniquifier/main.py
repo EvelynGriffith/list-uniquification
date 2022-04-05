@@ -56,12 +56,14 @@ def main(
         # display a final message and some extra spacing, asking a question
         # about the efficiency of the approach to computing the number sequence
         console.print()
-        console.print(f":mag: So, was this an efficient approach to uniquifying the data?")
+        console.print(":mag: So, was this an efficient approach to uniquifying the data?")
         console.print()
         # use the extract_data_given_column function to get a data column text list
         data_column_text_list = extract.extract_data_given_column(data_text, column)
-    # TODO: call the constructed function and capture the result
-    # TODO: display debugging information with the function's output
+    # call the constructed function and capture the result
+        result = function_to_call(data_column_text_list)
+    # display debugging information with the function's output
+        return result
     # TODO: make sure to only take this step if the --display is specified
     # display the estimated overall memory use as reported by the operating system
     # Reference:
@@ -72,10 +74,10 @@ def main(
     console.print("Estimated overall memory according to the operating system:")
     console.print("   " + analyze.format_bytes(process.memory_info().vms))
     # display the reduction and percent reduction that is a result of the uniquification process
-    console.print(f":mag: So, did this remove a lot of duplicate data?")
+    console.print(":mag: So, did this remove a lot of duplicate data?")
     console.print()
-    console.print(f"   The number of values removed from the data: {}")
-    console.print(f"   The percent reduction due to uniquification: {}")
+    console.print("   The number of values removed from the data: ")
+    console.print("   The percent reduction due to uniquification:")
     console.print()
     # make sure that your program output is exactly like the
     # output provided in the project description on the Proactive Programmers web site
