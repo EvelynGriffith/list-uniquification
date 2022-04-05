@@ -31,6 +31,7 @@ def extract_data_given_column(data: str, column: int) -> List[str]:
     # --> iterate through each line of the file and extract the current job
     for row in data.splitlines("\n"):
         result = row.split(",")
-        
+        if result[0]:
+            
     # ---> extract the specified column that contains the requested data
     # return the list of all of the specified column

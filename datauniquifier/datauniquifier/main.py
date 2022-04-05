@@ -62,6 +62,7 @@ def main(
         data_column_text_list = extract.extract_data_given_column(data_text, column)
     # call the constructed function and capture the result
         result = function_to_call(data_column_text_list)
+
     # display debugging information with the function's output
         return result
     # TODO: make sure to only take this step if the --display is specified
