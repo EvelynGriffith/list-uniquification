@@ -49,12 +49,16 @@ def main(
         raise typer.Abort()
     # --> the file was specified and it is valid so we should read and check it
     if data_file.is_file():
-        # TODO: read in the contents of the file and display welcome messages
-        # TODO: read the example output in Discord to see what your program should
+        # read in the contents of the file and display welcome messages
+        open("input/data.txt", "r")
+        # read the example output in Discord to see what your program should
         # produce as output, ensuring that the program output matches exactly
         # display a final message and some extra spacing, asking a question
         # about the efficiency of the approach to computing the number sequence
-        # TODO: use the extract_data_given_column function to get a data column text list
+        console.print()
+        console.print(f":mag: So, was this an efficient approach to uniquifying the data?")
+        console.print()
+        # use the extract_data_given_column function to get a data column text list
         data_column_text_list = extract.extract_data_given_column(data_text, column)
     # TODO: call the constructed function and capture the result
     # TODO: display debugging information with the function's output
@@ -67,8 +71,13 @@ def main(
     process = psutil.Process(os.getpid())
     console.print("Estimated overall memory according to the operating system:")
     console.print("   " + analyze.format_bytes(process.memory_info().vms))
-    # TODO: display the reduction and percent reduction that is a result of the uniquification process
-    # TODO: make sure that your program output is exactly like the
+    # display the reduction and percent reduction that is a result of the uniquification process
+    console.print(f":mag: So, did this remove a lot of duplicate data?")
+    console.print()
+    console.print(f"   The number of values removed from the data: {}")
+    console.print(f"   The percent reduction due to uniquification: {}")
+    console.print()
+    # make sure that your program output is exactly like the
     # output provided in the project description on the Proactive Programmers web site
     # TODO: once you finish implementing the program make sure that you evaluate:
     # --> Time efficiency and memory consumption and percent reduction for column 0 and column 1
