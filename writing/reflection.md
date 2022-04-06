@@ -126,7 +126,7 @@ from running the `datauniquifier` program.
 
 ### What was the most confusing concept in this assignment? What did you do to ultimately understand it?
 
-TODO: provide a one paragraph response to this question, using source code components and technical details.
+The most confusing concept for me in this project was actually something that I think was meant to be rather simple. I was most confused by the extract function. After figuring out how to write this function, I learned that it was because I didnt fully understand the way that I was meant to break up the string and how the indexing of the string, now turned into a list, would be vital in 
 
 ### After completing this assignment, what do you think is the purpose of running experiments?
 
