@@ -43,16 +43,16 @@ def unique_set(data: List[str]) -> List[str]:
 
 
 @timing
-def unique_setcomprehension(data: List[str], seen: set) -> List[str]:
+def unique_setcomprehension(data: List[str]) -> List[str]:
     """Perform uniquification of the input list of strings and return results in a list of strings."""
     # Add the source code for method f8
     # You may need to add type hints or statements to support mypy checking
-    # Order preserving:
+    # Order preserving
     seen = set()
-    seen_add = seen.add
     result = []
     for x in data:
-        if x not in seen and not seen_add(x):
+        if x not in seen:
+            seen.add(x)
             result.append(x)
     return result
 
@@ -65,15 +65,15 @@ def unique_dictionary(data: List[str]) -> List[str]:
     return list(dict.fromkeys(data))
 
 
-def unique_listcomprehension(data: List[str], seen: set) -> List[str]:
+def unique_listcomprehension(data: List[str]) -> List[str]:
     """Perform uniquification of the input list of strings and return results in a list of strings."""
     # Add the source code for method f8
     # You may need to add type hints or statements to support mypy checking
     # Order preserving
     seen = set()
-    seen_add = seen.add
     result = []
     for x in data:
-        if x not in seen and not seen_add(x):
+        if x not in seen:
+            seen.add(x)
             result.append(x)
     return result
