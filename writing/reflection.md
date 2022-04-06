@@ -103,14 +103,13 @@ This function is going to calculate the percent of reduction, so essentially how
     return wrap
 ```
 
-This function is very important whenever you want to learn how to time something that you are experimenting with in code. Essentially, this function is going to be a function within a function and it is going to create a function called wrap which will
+This function is very important whenever you want to learn how to time something that you are experimenting with in code. Essentially, this function is going to be a function within a function and it is going to create a function called wrap which will take the time of something like a stopwatch would. It does this by allowing someone to, for lack of a better term, decorate a function below it by putting the ornament @timing before the function. This tells the code that you want the function called timing to be used on that other function.
 
 ### Experimental Results
 
 ## Please use output from running the program to explain which Python function is the fastest. How did you know?
 
-TOD: Your response to this question should use concrete numbers that resulted
-from running the `datauniquifier` program.
+The program that is ultimately the fastest is unique_set. This function when running column 0 of the program had an output of 0.0100seconds. When running column 1 it had an output of 0.0050seconds. This is compared to unique_setcomprehension with times of 0.140seconds, and 0.0050seconds, as well as unique_dictionary with times of 0.0060seconds and 0.0080seconds. The reason that I think unique set is the fastest is because when setcomprehension is ran at column 0 it runs at
 
 ## Please use output from running the program to explain how much list uniquification decreases the size of each column.
 
