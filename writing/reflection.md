@@ -109,7 +109,7 @@ This function is very important whenever you want to learn how to time something
 
 ## Please use output from running the program to explain which Python function is the fastest. How did you know?
 
-The program that is ultimately the fastest is unique_set. This function when running column 0 of the program had an output of 0.0100seconds. When running column 1 it had an output of 0.0050seconds. This is compared to unique_setcomprehension with times of 0.140seconds, and 0.0050seconds, as well as unique_dictionary with times of 0.0060seconds and 0.0080seconds. The reason that I think unique set is the fastest is because when setcomprehension is ran at column 0 it runs at
+The program that is ultimately the fastest is unique_set. This function when running column 0 of the program had an output average of 0.0101. When running column 1 it had an average output of 0.0045seconds. For this experiment I chose to run each program 4 times and then take the average time for all of them. I figured that this process would give me more accurate results. The unique_set function is compared to unique_setcomprehension with average times of 0.148seconds for column 0, and 0.0058seconds for column 1. Finally I found the averages for unique_dictionary with average times of 0.0060seconds and 0.0080seconds. The reason that I think unique set is the fastest is because when setcomprehension is ran at column 0 it runs at
 
 ## Please use output from running the program to explain how much list uniquification decreases the size of each column.
 
