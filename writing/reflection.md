@@ -6,7 +6,7 @@ syntax, or technical content. This means that when you are finished with this
 reflection it should contain polished responses that are suitable for
 publication on your professional web site.
 
-## Add Your Name Here
+## Evelyn Griffith
 
 ## Program Input and Output
 
