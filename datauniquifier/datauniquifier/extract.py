@@ -36,5 +36,3 @@ def extract_data_given_column(data: str, column: int) -> List[str]:
     # return the list of all of the specified column
     return data_collection
 
-def unique_listcomprehension():
-    None
