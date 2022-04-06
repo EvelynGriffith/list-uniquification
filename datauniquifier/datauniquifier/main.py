@@ -58,17 +58,21 @@ def main(
         # about the efficiency of the approach to computing the number sequence
         console.print()
         data_column_text_list = extract.extract_data_given_column(data_text, column)
-        console.print (f" The data file contains {len(data_column_text_list)} data values in it!")
+        console.print(
+            f" The data file contains {len(data_column_text_list)} data values in it!"
+        )
         console.print()
         console.print("Let's do some uniquification!")
         console.print()
-        console.print(":mag: So, was this an efficient approach to uniquifying the data?")
+        console.print(
+            ":mag: So, was this an efficient approach to uniquifying the data?"
+        )
         console.print()
         # use the extract_data_given_column function to get a data column text list
-    # call the constructed function and capture the result
+        # call the constructed function and capture the result
         uniquified_list = function_to_call(data_column_text_list)
-    # display debugging information with the function's output
-    # make sure to only take this step if the --display is specified
+        # display debugging information with the function's output
+        # make sure to only take this step if the --display is specified
         if display:
             print(uniquified_list)
     # display the estimated overall memory use as reported by the operating system
@@ -84,8 +88,12 @@ def main(
     # display the reduction and percent reduction that is a result of the uniquification process
     console.print(":mag: So, did this remove a lot of duplicate data?")
     console.print()
-    console.print(f"   The number of values removed from the data: {analyze.calculate_reduction(data_column_text_list, uniquified_list)}")
-    console.print(f"   The percent reduction due to uniquification: {analyze.calculate_percent_reduction(data_column_text_list, uniquified_list)}")
+    console.print(
+        f"   The number of values removed from the data: {analyze.calculate_reduction(data_column_text_list, uniquified_list)}"
+    )
+    console.print(
+        f"   The percent reduction due to uniquification: {analyze.calculate_percent_reduction(data_column_text_list, uniquified_list)}"
+    )
     console.print()
     # make sure that your program output is exactly like the
     # output provided in the project description on the Proactive Programmers web site

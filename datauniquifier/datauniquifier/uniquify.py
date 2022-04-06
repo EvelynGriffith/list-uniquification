@@ -32,6 +32,7 @@ def timing(function):
 # Make sure that you understand the purpose of the timing annotation for these functions
 # Add the timing annotation to each of the following functions
 
+
 @timing
 def unique_set(data: List[str]) -> List[str]:
     """Perform uniquification of the input list of strings and return results in a list of strings."""
@@ -39,6 +40,7 @@ def unique_set(data: List[str]) -> List[str]:
     # You may need to add type hints or statements to support mypy checking
     # Not order preserving
     return list(set(data))
+
 
 @timing
 def unique_setcomprehension(data: List[str]) -> List[str]:
@@ -48,6 +50,7 @@ def unique_setcomprehension(data: List[str]) -> List[str]:
     # Order preserving
     seen = set()
     return [x for x in data if x not in seen and not seen.add(x)]
+
 
 @timing
 def unique_dictionary(data: List[str]) -> List[str]:
