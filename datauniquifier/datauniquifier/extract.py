@@ -2,8 +2,6 @@
 
 from typing import List
 
-import csv
-
 # Sample of the data set:
 
 # dana74@mahoney-perez.com,"Administrator, charities/voluntary organisations"
