@@ -59,10 +59,7 @@ tests\test_uniquify.py The function 'unique_set' took: 0.0000 sec
 
 #### Please explain each line of source code from the `extract` module
 
-TODO: Write at least one paragraph to explain the requested source code
-
-```
-for line in csv.reader(
+```for line in csv.reader(
     data.splitlines(),
     quotechar='"',
     delimiter=",",
@@ -70,6 +67,8 @@ for line in csv.reader(
     skipinitialspace=True,
 ):
 ```
+
+This code is basically a for loop but when exploring it in further detail one realizes that it is a for loop that will 
 
 #### Explain in detail the purpose of the following two Python functions
 
