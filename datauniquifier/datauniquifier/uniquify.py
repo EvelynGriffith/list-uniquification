@@ -48,8 +48,8 @@ def unique_setcomprehension(data: List[str], seen: set) -> List[str]:
     # Add the source code for method f8
     # You may need to add type hints or statements to support mypy checking
     # Order preserving:
-    seen=set()
-    seen_add=seen.add
+    seen = set()
+    seen_add = seen.add
     result = []
     for x in data:
         if x not in seen and not seen_add(x):
@@ -70,8 +70,8 @@ def unique_listcomprehension(data: List[str]) -> List[str]:
     # Add the source code for method f8
     # You may need to add type hints or statements to support mypy checking
     # Order preserving
-    seen=set()
-    seen_add=seen.add
+    seen = set()
+    seen_add = seen.add
     result = []
     for x in data:
         if x not in seen and not seen_add(x):
