@@ -68,16 +68,15 @@ tests\test_uniquify.py The function 'unique_set' took: 0.0000 sec
 ):
 ```
 
-This code is basically a for loop but when exploring it in further detail one realizes that it is a for loop that will 
+This code is basically a for loop but when exploring it in further detail one realizes that it is a for loop that will go into a csv file and split up the string of data within that file into single lines (using the .splitlines() tool) it will then quote the character '"' and use a delimeter which is a comma. These are going to tell the program when to slpit things and where so that it knows how to display and collect data from the file. Then it will use csv.QUOTE_ALL to quote the things within the file that are needed. This for loop is used to iterate through the file break the things up that are needed based on a couple of different conditions like the comman and apastrophe and then give them back to us.
 
 #### Explain in detail the purpose of the following two Python functions
 
-TODO: Write at least one paragraph to explain the requested source code
-
-```
-def calculate_reduction(list_start, list_final):
+```def calculate_reduction(list_start, list_final):
     """Calculate the reduction in the size of the list."""
     return len(list_start) - len(list_final)
+
+This piece of code is going to calculat the difference between the start of the list and the end of the list after the program has parsed through and taken out the repeated pieces of data. This will occur by the program taking the len of the starting list, called list_start in this case, and then subtracting it by the len of the final list, list_final. This will be returned to us through the return statement that it already lives in.
 
 
 def calculate_percent_reduction(list_start, list_final):
@@ -86,6 +85,8 @@ def calculate_percent_reduction(list_start, list_final):
     percent_reduction = (reduction / len(list_start)) * 100
     return percent_reduction
 ```
+
+This function is going to calculate the percent of reduction, so essentially how much is this program taking away repeated values and where does that leave my list. It will first set a variable called reduction and it will then call on the function called calculate_reduction, which I spoke about above, and it will then use that on this function's list_start, and list_final) in this case it is important to note that list_start is not a global variable so the function does need to repeate it. From there the function will divide reduction by the len of the starting list, list_start, and then multiply it by 100. This will all be done under the variable called percent_reduction and then returned through that variable as well.
 
 ## Explain in detail the purpose of the following Python function
 
