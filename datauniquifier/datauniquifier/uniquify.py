@@ -65,7 +65,7 @@ def unique_dictionary(data: List[str]) -> List[str]:
     return list(dict.fromkeys(data))
 
 
-def unique_listcomprehension(data: List[str]) -> List[str]:
+def unique_listcomprehension(data: List[str], seen: set) -> List[str]:
     """Perform uniquification of the input list of strings and return results in a list of strings."""
     # Add the source code for method f8
     # You may need to add type hints or statements to support mypy checking
