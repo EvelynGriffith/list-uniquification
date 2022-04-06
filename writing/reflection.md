@@ -109,12 +109,12 @@ This function is very important whenever you want to learn how to time something
 
 ## Please use output from running the program to explain which Python function is the fastest. How did you know?
 
-TODO: Your response to this question should use concrete numbers that resulted
+TOD: Your response to this question should use concrete numbers that resulted
 from running the `datauniquifier` program.
 
 ## Please use output from running the program to explain how much list uniquification decreases the size of each column.
 
-TODO: Your response to this question should use concrete numbers that resulted
+TOD: Your response to this question should use concrete numbers that resulted
 from running the `datauniquifier` program.
 
 ## Professional Development
