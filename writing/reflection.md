@@ -126,7 +126,7 @@ from running the `datauniquifier` program.
 
 ### What was the most confusing concept in this assignment? What did you do to ultimately understand it?
 
-The most confusing concept for me in this project was actually something that I think was meant to be rather simple. I was most confused by the extract function. After figuring out how to write this function, I learned that it was because I didnt fully understand the way that I was meant to break up the string and how the indexing of the string, now turned into a list, would be vital in 
+The most confusing concept for me in this project was actually something that I think was meant to be rather simple. I was most confused by the extract function. After figuring out how to write this function, I learned that it was because I didnt fully understand the way that I was meant to break up the string and how the indexing of the string, now turned into a list, would be vital in making sure that the right information is passed through the CLI and presented when called. I guess the reason that this was confusing is because when I was first thinking about the function, I thought that when I broke the string of values from the data.txt file they would be broken first by .splitlines, and then another time by .split(",") and then this would give me the data I needed to get everything to work. However, what I didnt realize was that the data would then only be presented like so: ['[string1]', '[string2]']. This was important because I didnt fully understand that I needed to 
 
 ### After completing this assignment, what do you think is the purpose of running experiments?
 
