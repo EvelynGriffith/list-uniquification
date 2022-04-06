@@ -30,7 +30,8 @@ def extract_data_given_column(data: str, column: int) -> List[str]:
     # the format of the comma separated value (CSV) file that we must parse
     # --> iterate through each line of the file and extract the current job
     for row in data.splitlines():
-        result = row.split(",")
+        result = row.split(",")[column]
+        data_collection.append(result)
     # ---> extract the specified column that contains the requested data
     # return the list of all of the specified column
-        print(result)
+    return data_collection

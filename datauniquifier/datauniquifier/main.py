@@ -50,29 +50,37 @@ def main(
     # --> the file was specified and it is valid so we should read and check it
     if data_file.is_file():
         # read in the contents of the file and display welcome messages
-        open("input/data.txt", "r")
+        with open("input/data.txt", "r") as input_file:
+            data_text = input_file.read()
         # read the example output in Discord to see what your program should
         # produce as output, ensuring that the program output matches exactly
         # display a final message and some extra spacing, asking a question
         # about the efficiency of the approach to computing the number sequence
         console.print()
+        data_column_text_list = extract.extract_data_given_column(data_text, column)
+        console.print (f" The data file contains {len(data_column_text_list)} data values in it!")
+        console.print()
+        console.print("Let's do some uniquification!")
+        console.print()
         console.print(":mag: So, was this an efficient approach to uniquifying the data?")
         console.print()
         # use the extract_data_given_column function to get a data column text list
-        data_column_text_list = extract.extract_data_given_column(data_text, column)
-        print(data_column_text_list)
     # call the constructed function and capture the result
         uniquified_list = function_to_call(data_column_text_list)
     # display debugging information with the function's output
     # make sure to only take this step if the --display is specified
+        if display:
+            print(uniquified_list)
     # display the estimated overall memory use as reported by the operating system
     # Reference:
     # https://stackoverflow.com/questions/938733/total-memory-used-by-python-process
     # Note: you may need to adjust the implementation of the format_bytes function
     # in the analyze module depending on your operating system
-    process = psutil.Process(os.getpid(display))
+    process = psutil.Process(os.getpid())
+    console.print()
     console.print("Estimated overall memory according to the operating system:")
     console.print("   " + analyze.format_bytes(process.memory_info().vms))
+    console.print()
     # display the reduction and percent reduction that is a result of the uniquification process
     console.print(":mag: So, did this remove a lot of duplicate data?")
     console.print()
