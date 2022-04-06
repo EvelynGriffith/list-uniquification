@@ -35,4 +35,3 @@ def extract_data_given_column(data: str, column: int) -> List[str]:
     # ---> extract the specified column that contains the requested data
     # return the list of all of the specified column
     return data_collection
-
