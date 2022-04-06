@@ -90,14 +90,7 @@ def calculate_percent_reduction(list_start, list_final):
 
 ## Explain in detail the purpose of the following Python function
 
-TODO: Your response to this question should explain every line of source code
-in the provided function. If you do not initially understand one of the lines
-of source code, then please consult online resources or ask a question on
-Discord. If you are still not sure how a line of source code works, please use
-explain everything that you do understand about that specific line.
-
-```
-def timing(function):
+```def timing(function):
     """Define a profiling function for execution time."""
     @wraps(function)
     def wrap(*args, **kw):
@@ -109,6 +102,8 @@ def timing(function):
 
     return wrap
 ```
+
+This function is very important whenever you want to learn how to time something that you are experimenting with in code. Essentially, this function is going to be a function within a function and it is going to create a function called wrap which will
 
 ### Experimental Results
 
