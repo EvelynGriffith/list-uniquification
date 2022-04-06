@@ -1,28 +1,57 @@
 # List Uniquification
 
-TODO: Please delete all of the TODO markers and prompts inside of this file. You
-also need to ensure that this file does not have any mistakes in Markdown,
-syntax, or technical content. This means that when you are finished with this
-reflection it should contain polished responses that are suitable for
-publication on your professional web site.
-
 ## Evelyn Griffith
 
 ## Program Input and Output
 
 ### What is the output from running the following command?
 
-TODO: Use a fenced code block to provide the output for this command.
-
 `poetry run datauniquifier --approach dictionary --column 1 --data-file input/data.txt`
+
+```The chosen approach to uniquify the file is: dictionary
+
+The data file that contains the input is: input\data.txt
+
+
+ The data file contains 50000 data values in it!
+
+Let's do some uniquification!
+
+🔍 So, was this an efficient approach to uniquifying the data?
+
+The function 'unique_dictionary' took: 0.0050 sec
+
+Estimated overall memory according to the operating system:
+   21.82421875 megabytes
+
+🔍 So, did this remove a lot of duplicate data?
+
+   The number of values removed from the data: 49476
+   The percent reduction due to uniquification: 98.952
+```
 
 ### What are the first five lines of the contents of the file that is input into the `datauniquifier`?
 
-TODO: Use a fenced code block to provide the contents of the file.
+```dana74@mahoney-perez.com,"Administrator, charities/voluntary organisations"
+nathanjohnson@davila.net,Software engineer
+pbush@gmail.com,"Journalist, newspaper"
+timothy75@chang.com,Osteopath
+gsparks@yahoo.com,"Psychologist, clinical"
+```
 
 ### What is the output from running the test suite with the command `poetry run task test-silent`?
 
-TODO: Use a fenced code block to provide the output from running the test suite.
+```collected 11 items
+
+tests\test_analyze.py ......
+tests\test_extract.py ..
+tests\test_uniquify.py The function 'unique_set' took: 0.0000 sec
+.The function 'unique_set' took: 0.0000 sec
+.The function 'unique_set' took: 0.0000 sec
+.
+
+====================================================== 11 passed in 0.08s ====================================================== 
+```
 
 ## Source Code
 
